@@ -1,0 +1,19 @@
+.landing-image {
+  height: 50em;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.sidenav {
+  position: absolute;
+  top: 100%;
+  height: calc(100vh - 100%) !important;
+  width: 100%;
+          left: 0%;
+          transition: left 0.35s;
+          padding: 2rem;
+          background-color: inherit;
+}
