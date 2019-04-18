@@ -1,17 +1,41 @@
 <!doctype html>
 <html>
   <head>
+      <script type="text/javascript" src="./javascript/jquery-1.11.3.js"></script>
+      <script type="text/javascript" src="./javascript/divergence-meter.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        initializeDivergenceMeter({
+          divergenceMeterElement: $(".divergence-meter"),
+          minimalUpdateDelay: 1800,
+          maximalUpdateDelay: 3000,
+          minimalTransitionNumber: 5,
+          maximalTransitionNumber: 20,
+          transitionDelay: 2
+      })});
+    </script>
   </head>
-<body>
+<body style="height: 3000px;">
       <!-- Sidebar -->
-      <div class="row no-gutters">
-  <div class="col-sm-9">
-        <img src="./giphy.gif" class="img-fluid w-100"></img>
+      <div class="row col no-gutters">
+  <div class="col-lg-9" style="background: url(image/fond.png) no-repeat center center fixed;">
+      <div class="divergence-meter">
+          <div class="frame major-digit"></div>
+          <div class="frame dot"></div>
+          <div class="frame digit"></div>
+          <div class="frame digit"></div>
+          <div class="frame digit"></div>
+          <div class="frame digit"></div>
+          <div class="frame digit"></div>
+          <div class="frame digit"></div>
+        </div>
+
   </div>
-  <div class="col-sm-3" style="height: 100%;">
-        <nav class="sidenav navbar-dark bg-dark">
+  <div class="col-lg-3" style="height: 100%;">
+    <div class="container" style="position: fixed;">
+        <nav class="sidenav navbar-light bg-light">
           <div class="container">
             <div class="sidebar">
                 <div class="navbar-brand">
@@ -35,6 +59,7 @@
               </div>
             </div>
             </nav>
+        </div>
   </div>
 </div>
 

@@ -1,19 +1,40 @@
-.landing-image {
-  height: 50em;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
 .sidenav {
   position: absolute;
-  top: 100%;
-  height: calc(100vh - 100%) !important;
+  top: 0px;
+  height: (100%) !important;
   width: 100%;
-          left: 0%;
-          transition: left 0.35s;
-          padding: 2rem;
-          background-color: inherit;
+  left: 0%;
+  transition: left 0.35s;
+  padding: 2rem;
+  background-color: inherit;
+}
+
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.divergence-meter {
+  background-position: -1;
+  display: flex;
+  vertical-align: middle;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+}
+
+.divergence-meter div {
+  vertical-align: middle;
+  margin-left: auto;
+	margin-right: auto;
+  display:inline-block;
+	height: 307px;
+	width: 104px;
+}
+
+.divergence-meter .frame {
+	background-image: url(image/empty.png);
 }
